@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        pubSubProcessor-in-0:
+          destination: pubsub-topic
+        pubSubProcessor-out-0:
+          destination: pubsub-topic
+      kafka:
+        binder:
+          brokers: localhost:9092
